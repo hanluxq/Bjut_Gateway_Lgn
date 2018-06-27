@@ -17,9 +17,11 @@ if status == True:
 else:
     print("网关尚未登录") # 继续进行网关登录
 
+'''
 # 登录lgn
-status = lgn.lgn();
+status = lgn.lgn()
 if status == False:
     print("网关登录失败\n")
 else:
     print("网关登录成功\n")
+'''
