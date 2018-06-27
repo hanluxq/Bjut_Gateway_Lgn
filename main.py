@@ -3,11 +3,13 @@
 import requests
 import lgn,connect_test
 
+'''
 # 测试网络连接情况（测试能否访问lgn网关）
 status = connect_test.test()
 if status == False:
     print("网关访问失败\n")
     exit(0)     # 无法连接到lgn网关，程序停止运行
+'''
 
 # 检测是否登录
 status = lgn.lgn_test()
