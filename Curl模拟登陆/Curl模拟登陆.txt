@@ -1,0 +1,10 @@
+
+GET:
+
+curl https://www.baidu.com/ | iconv -f utf-8 -t gb2312 		# °Ù¶ÈÍøÒ³GET
+curl https://lgn.bjut.edu.cn/ | iconv -f gb2312 -t gb2312 	# LGNÍø¹ØGET
+
+POST:
+
+curl -d "DDDDD=14024210&upass=211211&v46s=1&v6ip=&f4serip=172.30.201.10&0MKKey=" https://lgn.bjut.edu.cn/
+

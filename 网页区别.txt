@@ -1,0 +1,17 @@
+
+未登录，直接get：
+<title>北京工业大学上网登录窗                  </title>
+
+
+已登录，直接get：
+<title>北京工业大学上网信息窗                  </title>
+
+
+post登录信息，并成功登录：
+<title>登录成功窗</title>
+
+
+post登录信息，但登录失败：
+<title>信息返回窗</title>
+
+

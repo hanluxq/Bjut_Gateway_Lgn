@@ -1,0 +1,42 @@
+﻿网关登录信息
+
+POST
+https://lgn.bjut.edu.cn/
+
+请求头:
+Host: lgn.bjut.edu.cn
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://lgn.bjut.edu.cn/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 70
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+请求主体:
+DDDDD=14024210&upass=211211&v46s=1&v6ip=&f4serip=172.30.201.10&0MKKey=
+
+参数说明：
+
+DDDDD：
+用户名（学号）
+
+upass：
+密码
+
+v46s：
+IPV4与IPV6统一认证		0
+IPV6认证				2
+IPV4认证				1
+
+f4serip：
+172.30.201.10（服务器IP）
+
+0MKKey：
+空
+
+
