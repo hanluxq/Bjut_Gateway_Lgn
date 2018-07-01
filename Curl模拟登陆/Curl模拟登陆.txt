@@ -1,10 +1,25 @@
 
+Https相关：
+在openwrt下curl对https缺乏证书支持（应该是openwrt比较精简，没有自带证书）
+在windows的cmd下测试时https存在问题，改为http后工作正常。
+
+命令行编码：
+windows的cmd输出编码为gb2312。
+Linux下输出是utf-8。
+
+例：
+改用http后工作正常。
+
+curl http://www.baidu.com/ | iconv -f utf-8 -t utf-8		# 百度网页GET
+
+
+Lgn网关登录：
+
 GET:
 
-curl https://www.baidu.com/ | iconv -f utf-8 -t gb2312 		# 百度网页GET
-curl https://lgn.bjut.edu.cn/ | iconv -f gb2312 -t gb2312 	# LGN网关GET
+curl http://lgn.bjut.edu.cn/ | iconv -f gb2312 -t utf-8		# LGN网关GET
 
 POST:
 
-curl -d "DDDDD=14024210&upass=211211&v46s=1&v6ip=&f4serip=172.30.201.10&0MKKey=" https://lgn.bjut.edu.cn/
+curl -d "DDDDD=14024210&upass=211211&v46s=1&v6ip=&f4serip=172.30.201.10&0MKKey=" http://lgn.bjut.edu.cn/ | iconv -f gb2312 -t utf-8
 
